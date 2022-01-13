@@ -1,0 +1,550 @@
+<!doctype html>
+<html style="overflow-x:hidden;">
+<head>
+	<title>Lorena's Website | Reviews</title>
+	<meta name="description" content="Lorena Florea Challenge 5">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel = "icon" type = "icon.png" href = "icon.png">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Exo:wght@200;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	
+</head>
+
+<style>
+	/*navbar style*/
+	.navbar-nav{
+		padding-right: 2%
+	}
+	.navbar-brand{
+		padding-right: 2%
+	}
+	.custom-navbar{ 
+		background-color:plum;
+		font-family: Exo;
+		-webkit-box-shadow: 0 8px 6px -6px mediumpurple;
+		-moz-box-shadow: 0 8px 6px -6px mediumpurple;
+		box-shadow: inset 0 0 20px 1px mediumpurple , 0 8px 6px -6px mediumpurple;;
+	} 
+
+	.nav-link{
+		color: aliceblue !important;
+		margin: 3px;
+		font-weight: 800;
+		font-size: 27px;
+	}
+
+	.navbar-nav{
+		text-align: center;
+	}
+
+	.custom-toggler .navbar-toggler-icon {
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+	}
+	
+	.navbar .nav-link:hover{
+		color: mediumpurple !important;
+		font-weight: 800;
+		font-size: 27px;
+
+	}
+	.navBar .navbar-toggler{
+			outline: none !important;
+			border: none !important;
+		}
+	/*Global Styles*/
+	body {
+		background: url(purp.jpg); 
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	td, th {
+		border: 1px solid #dddddd;
+		text-align: left;
+		padding: 8px;
+
+	} 
+	tr:nth-child(even) {
+		background:#3723A8;
+	}
+	/*Media Queries*/
+	@media only screen and (max-width: 402px) { /*Mobile*/
+		
+		table {
+			font-family: Exo;
+			color: aliceblue;
+			font-size: 11pt;
+			border-collapse: collapse;
+			margin: 0 auto;
+		} 
+			/*Text Styles*/
+		h1 { 
+			font-family: Exo;
+			font-weight: 800;
+			font-size: 25pt;
+			line-height: 35pt;
+			color: plum;
+			text-align: center;
+			padding-top: 20px;
+		}
+		h2 { 
+			font-family: Exo;
+			font-weight: 800;
+			font-size: 25pt;
+			line-height: 35pt;
+			color: plum;
+			text-align: center;
+			
+		}
+		.lorenaimage{
+			width: 300px;
+			height: auto;
+			float: left;
+			margin: 24px;
+		}
+		.concerttable{
+			margin-left: 0px;
+			margin-right: 0px;
+			width:100%;
+		}
+		
+		.p1 {
+			font-family: Exo;
+			font-size: 15pt;
+			line-height: 20pt;
+			color: aliceblue;
+			text-align: left;
+			margin: 5px 5px 20px 5px;
+		} 
+		.p2 {
+			font-family: Exo;
+			font-size: 15pt;
+			line-height: 20pt;
+			color: aliceblue;
+			text-align: left;
+			margin: 5px;
+			padding-bottom: 10px;
+		}
+		.p3 {
+			font-family: Exo;
+			font-size: 15pt;
+			line-height: 20pt;
+			color: aliceblue;
+			text-align: center;
+			margin: 5px;
+			padding-bottom: 10px;
+		}
+		.banner{
+			width: 100%;
+			height: 100%;
+			padding: 0%;
+			margin-right: 50%;
+			padding-top: 100px;
+		}
+		.sticktotop{
+			position: fixed;
+			z-index: 100;
+			width: 100%;
+		}
+		.backgrounddiv {
+			background: url(color.jpg);
+			width: 100%;
+			height: 100%;
+			padding: 0%;
+			margin-top: 0%;
+			margin-right: 50%;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.button {
+		  background-color: mediumpurple;
+		  border: none;
+		  color: aliceblue;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 18px;
+		  margin: 0px;
+		  cursor: pointer;
+		  border-radius: 20px;
+	}
+		
+	}
+	@media only screen and (min-width: 1080px) { /*Desktop*/
+
+		/*Text Styles*/
+		
+		table {
+			font-family: Exo;
+			color: aliceblue;
+			font-size: 15pt;
+			border-collapse: collapse;
+			margin: 0 auto;
+		} 
+		h1 { 
+			font-family: Exo;
+			font-weight: 800;
+			font-size: 50pt;
+			line-height: 70pt;
+			color: plum;
+			text-align: center;
+			padding-top: 50px;
+			padding-bottom: 25px;
+		}
+		h2 { 
+			font-family: Exo;
+			font-weight: 800;
+			font-size: 50pt;
+			line-height: 50pt;
+			color: plum;
+			text-align: center;
+		}
+		
+		.lorenaimage{
+			width: 300px;
+			height: auto;
+			float: left;
+			margin: 24px 24px 0px 70px;
+		}
+		.concerttable{
+			margin-left: 100px;
+			margin-right: 100px;
+		}
+		.p1 {
+			font-family: Exo;
+			font-size: 20pt;
+			line-height: 30pt;
+			color: aliceblue;
+			text-align: left;
+			margin: 10px 70px 24px 70px;
+		} 
+		.p2 {
+			font-family: Exo;
+			font-size: 20pt;
+			line-height: 30pt;
+			color: aliceblue;
+			text-align: left;
+			margin: 10px 70px 24px 70px;
+			padding-bottom: 15px;
+		}
+		.p3 {
+			font-family: Exo;
+			font-size: 20pt;
+			line-height: 30pt;
+			color: aliceblue;
+			text-align: center;
+			margin: 10px 70px 24px 70px;
+			padding-bottom: 10px;
+		}
+		.banner{
+			width: 70%;  
+			padding: 0%;
+			margin-left: 15%;
+			margin-right: 50%;
+		}
+		.sticktotop{
+			position: fixed;
+			z-index: 100;
+			width: 100%;
+		}
+		.backgrounddiv {
+			background: url(color.jpg);
+			width: 70%;  
+			padding: 0%;
+			margin-left: 15%;
+			margin-right: 50%;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.button {
+		  background-color: mediumpurple;
+		  border: none;
+		  color: aliceblue;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 25px;
+		  margin: 4px 8px;
+		  cursor: pointer;
+		  border-radius: 20px;
+	}
+		
+	}
+	@media only screen and (max-width: 1079px) { /*in between*/
+
+		/*Text Styles*/
+		
+		table {
+			font-family: Exo;
+			color: aliceblue;
+			font-size: 11pt;
+			border-collapse: collapse;
+			margin: 0 auto;
+		} 
+		h1 { 
+			font-family: Exo;
+			font-weight: 800;
+			font-size: 25pt;
+			line-height: 35pt;
+			color: plum;
+			text-align: center;
+			padding-top: 20px;
+		}
+		h2 { 
+			font-family: Exo;
+			font-weight: 800;
+			font-size: 25pt;
+			line-height: 35pt;
+			color: plum;
+			text-align: center;
+			
+		}
+		
+		.lorenaimage{
+			width: 300px;
+			height: auto;
+			float: left;
+			margin: 24px;
+		}
+		.concerttable{
+			margin-left: 0px;
+			margin-right: 0px;
+			width: 100%;
+		}
+		.p1 {
+			font-family: Exo;
+			font-size: 15pt;
+			line-height: 20pt;
+			color: aliceblue;
+			text-align: left;
+			margin: 5px 5px 20px 5px;
+		} 
+		.p2 {
+			font-family: Exo;
+			font-size: 15pt;
+			line-height: 20pt;
+			color: aliceblue;
+			text-align: left;
+			margin: 5px;
+			padding-bottom: 10px;
+		}
+		.p3 {
+			font-family: Exo;
+			font-size: 15pt;
+			line-height: 20pt;
+			color: aliceblue;
+			text-align: center;
+			margin: 5px;
+			padding-bottom: 10px;
+		}
+		.banner{
+			width: 100%;
+			height: 100%;
+			padding: 0%;
+			margin-right: 50%;
+			padding-top: 100px;
+		}
+		.sticktotop{
+			position: fixed;
+			z-index: 100;
+			width: 100%;
+		}
+		.backgrounddiv {
+			background: url(color.jpg);
+			width: 100%;
+			height: 100%;
+			padding: 0%;
+			margin-top: 0%;
+			margin-right: 50%;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.button {
+		  background-color: mediumpurple;
+		  border: none;
+		  color: aliceblue;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 18px;
+		  margin: 0px;
+		  cursor: pointer;
+		  border-radius: 20px;
+	}
+	}
+</style>
+
+<body style="overflow-x: hidden;">
+	<audio id="myAudio" autoplay="autoplay" loop="loop">
+  		<source src="song3.mp3" type="audio/mpeg">
+	</audio>
+	<script>
+	document.getElementById("myAudio").volume = 0.05;
+	function playAudio(){
+		document.getElementById("myAudio").play();
+	}
+	function pauseAudio(){
+		document.getElementById("myAudio").pause();
+	}
+		</script>
+	<div class="navBar sticktotop">
+		<nav class="navbar navbar-expand-sm custom-navbar" >
+			<a href="./index.html">
+				<img src="logo.png" class="img-fluid" style="height:80px; width:80px;"/>
+			</a>
+			<button class="button" onclick="playAudio()" type="button">PLAY</button>
+			<button class="button" onclick="pauseAudio()" type="button">PAUSE</button> 
+			<button class="navbar-toggler custom-toggler" style="position: absolute; right: 0;">
+				<span class="navbar-toggler-icon" data-toggle="collapse" data-target="#navbar">
+				</span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbar">
+				<ul class="navbar-nav ml-auto ">
+					<li class="nav-item"></li>
+					<a href="./index.html" class="nav-link">Home</a>
+					<a href="./page2.html" class="nav-link">Media</a>
+					<a href="./page3.html" class="nav-link">Reviews </a>
+					<a href="./page4.html" class="nav-link">About Me/Contact<a>
+				</ul>			
+			</div>
+		</nav>
+    </div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12">
+				<img class="banner" src="concertfour.png" alt="concert banner">
+			</div>
+		</div>
+		<div class="backgrounddiv">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Concert Info and Ratings</h1>
+				<table class="concerttable">
+					<tr>
+						<th>Concerts</th>
+						<th>Location</th>			
+						<th>Date</th>
+						<th>Rating</th>
+					</tr>
+					<tr>
+						<td>5 Seconds of Summer</td>
+						<td>RBC Echo Beach</td>
+						<td>August 27th, 2018</td>
+						<td>8/10</td>
+					</tr>
+					<tr>
+						<td>COIN</td>
+						<td>The Opera House</td>
+						<td>February 12th, 2019 and October 10th, 2019</td>
+						<td>8/10</td>
+					</tr>
+				   	<tr>
+						<td>I DON'T KNOW HOW BUT THEY FOUND ME</td>
+						<td> The Opera House</td>
+						<td>May 8th, 2019</td>
+						<td>7/10</td>			
+					</tr>
+					<tr>
+						<td>Neon Dreams</td>
+						<td>Yonge-Dundas Square</td>
+						<td>August 23rd, 2019</td>
+						<td>7.5/10</td>
+					</tr>
+					<tr>
+						<td>Tyler the Creator</td>
+						<td>Scotiabank Arena</td>
+						<td>September 6th, 2019</td>
+						<td>7/10</td>
+					</tr>
+					<tr>
+						<td>Half Alive</td>
+						<td>The Mod Club</td>
+						<td>October 5th, 2019</td>
+						<td>7.5/10</td>
+					</tr>
+				  	<tr>
+						<td>Yungblud</td>
+						<td>The Danforth Music Hall</td>
+						<td>October 6th, 2019</td>
+						<td>10/10</td>
+					</tr>
+					<tr>
+						<td>Melanie Martinez</td>
+						<td>Rebel</td>
+						<td>October 22nd, 2019</td>
+						<td>8.5/10</td>
+					</tr>
+				 	<tr>
+						<td>Oliver Tree</td>
+						<td>The Phoenix Concert Theatre</td>
+						<td>October 29th, 2019</td>
+						<td>9/10</td>
+					</tr>
+				  	<tr>
+						<td>Conan Gray</td>
+						<td>Rebel</td>
+						<td>November 5th, 2019</td>
+						<td>9/10</td>
+					</tr>
+					<tr>
+						<td>Rex Orange County</td>
+						<td>The Danforth Music Hall</td>
+						<td>January 28th, 2020</td>
+						<td>8.5/10</td>	
+					</tr>
+				  	<tr>
+						<td>Weathers</td>
+						<td>The Mod Club</td>
+						<td>February 17th, 2020</td>
+						<td>8.5/10</td>
+					</tr>
+				  	<tr>
+						<td>Echosmith</td>
+						<td>The Mod Club</td>
+						<td>February 17th, 2020</td>
+						<td>8/10</td>
+					</tr>
+				  	<tr>
+						<td>Fitz and the Tantrums</td>
+						<td>The Danforth Music Hall</td>
+						<td>February 23rd, 2020</td>
+						<td>7/10</td>
+					</tr>
+				  	<tr>
+						<td>Palaye Royale</td>
+						<td>The Opera House</td>
+						<td>Postponed because of COVID :(</td>
+						<td>N/A</td>
+					</tr>
+				  	<tr>
+						<td>Hella Mega Tour - Green Day/Fall Out Boy/Weezer</td>
+						<td>Rogers Centre</td>
+						<td>Postponed because of COVID :(</td>
+						<td>N/A</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<h1>My First Ever Live Show</h1>
+				<img class = "img-fluid lorenaimage" src= "tmg1.png" onmouseover = "this.src='tmg2.png';" onmouseout = "this.src='tmg1.png';"/>
+				<p class = "p1"> 
+					Besides concerts, I've also attended a live show by TMG aka Cody Ko and Noel Miller. For anyone that loves comedy, I recommend seeing them if they ever visit again. I had been watching them for a while on Youtube, so getting to see them in person was 100% worth it. I ended up getting free tickets from a close friend and I was incredibly grateful towards her, because it was a great time. The show was mainly stand-up comedy, inside jokes, and skits. They're so much funnier in person and they truly make everyone in the audience feel like they're included. They would often pick a random person in the audience and do an improv skit with them. It was always hilarious to see the faces of the unsuspecting audience member getting chosen and having to go along with whatever they had planned.
+				</p>
+				<p class = "p2"> 
+					Cody and Noel are both Canadian and make songs as well (that are kinda really good actually). In a nutshell, if you're interested in a good beat and a good joke, check them out! 
+				</p>
+				<p class = "p3"> <em> 
+					Next time I attend a comedy or stand-up show, I'll post a little review here, so stay tuned post-covid! 
+				</em></p>
+			</div>
+		</div>
+	</div>
+	</div>
+</body>

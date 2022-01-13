@@ -1,0 +1,451 @@
+<!doctype html>
+<html style="overflow-x:hidden;">
+<head>
+	<title>Lorena's Website | Home</title>
+	<meta name="description" content="Lorena Florea Challenge 5">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel = "icon" type = "icon.png" href = "icon.png">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Exo:wght@200;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+
+<style>
+	/*navbar style*/
+	.navbar-nav{
+		padding-right: 2%
+	}
+	.navbar-brand{
+		padding-right: 2%
+	}
+	.custom-navbar{ 
+		background-color:plum;
+		font-family: Exo;
+		-webkit-box-shadow: 0 8px 6px -6px mediumpurple;
+		-moz-box-shadow: 0 8px 6px -6px mediumpurple;
+		box-shadow: inset 0 0 20px 1px mediumpurple , 0 8px 6px -6px mediumpurple;;
+	} 
+
+	.nav-link{
+		color: aliceblue !important;
+		margin: 3px;
+		font-weight: 800;
+		font-size: 27px;
+	}
+
+	.navbar-nav{
+		text-align: center;
+	}
+
+	.custom-toggler .navbar-toggler-icon {
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+	}
+	
+	.navbar .nav-link:hover{
+		color: mediumpurple !important;
+		font-weight: 800;
+		font-size: 27px;
+
+	}
+	.navBar .navbar-toggler{
+			outline: none !important;
+			border: none !important;
+		}
+	
+	.zoom:hover {
+  			-ms-transform: scale(1.05); /* IE 9 */
+			-webkit-transform: scale(1.05); /* Safari 3-8 */
+			transform: scale(1.1); 
+	}
+	/*Global Styles*/
+	
+	body {
+		background: url(purp.jpg); 
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+	img.resize {
+    	width: 80%; /* you can use % */
+    	height: auto;
+	}
+	/*Media Queries*/
+	@media only screen and (max-width: 402px) { /*Mobile*/
+
+			/*Text Styles*/
+		h1 { 
+			font-family: Exo;
+			font-weight: 800;
+			font-size: 25pt;
+			line-height: 35pt;
+			color: plum;
+			text-align: center;
+			padding-top: 20px;
+	
+		}
+		
+		h2 {
+			font-family: Exo;
+			font-weight: 800;
+			font-size: 25pt;
+			line-height: 35pt;
+			color: plum;
+			display:inline-block;
+			padding-top: 10px;
+		}
+		
+		h3 { 
+			font-family: Exo;
+			font-weight: 800;
+			font-size: 25pt;
+			line-height: 35pt;
+			color: plum;
+			text-align: center;
+			padding-bottom: 5px;
+			margin: 20px;
+		}
+		.p1 {
+			font-family: Exo;
+			font-size: 15pt;
+			line-height: 18pt;
+			color: aliceblue;
+			text-align: center;
+			margin: 5px;
+		} 
+		.p2 {
+			font-family: Exo;
+			font-size: 15pt;
+			line-height: 18pt;
+			color: aliceblue;
+			text-align: left;
+			margin: 5px 20px 5px 20px;
+			padding-bottom: 10px;
+		}
+		.banner{
+			width: 100%;
+			height: 100%;
+			padding: 0%;
+			margin-right: 50%;
+			padding-top: 100px;
+		}
+		.sticktotop{
+			position: fixed;
+			z-index: 100;
+			width: 100%;
+		}
+		.backgrounddiv {
+			background: url(color.jpg);
+			width: 100%;
+			height: 100%;
+			padding: 0%;
+			margin-right: 50%;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.finaldiv{
+			padding: 0px;
+		}
+		.button {
+		  background-color: mediumpurple;
+		  border: none;
+		  color: aliceblue;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 18px;
+		  margin: 0px;
+		  cursor: pointer;
+		  border-radius: 20px;
+	}
+		
+	}
+	
+	@media only screen and (min-width: 1080px) { /*Desktop*/
+
+		/*Text Styles*/
+		h1 { 
+			font-family: Exo;
+			font-weight: 800;
+			font-size: 50pt;
+			line-height: 70pt;
+			color: plum;
+			text-align: center;
+			padding-top: 30px;
+			
+		}
+		
+		h2 {
+			font-family: Exo;
+			font-weight: 800;
+			font-size: 30pt;
+			line-height: 40pt;
+			color: plum;
+			display:inline-block;
+			padding-top: 30px;
+			padding-bottom: 20px;
+		}
+		h3 { 
+			font-family: Exo;
+			font-weight: 800;
+			font-size: 50pt;
+			line-height: 50pt;
+			color: plum;
+			text-align: center;
+			padding-bottom: 30px;
+		}
+		
+		.p1 {
+			font-family: Exo;
+			font-size: 25pt;
+			line-height: 35pt;
+			color: aliceblue;
+			text-align: center;
+			margin: 20px 150px 24px 150px;
+		} 
+		.p2 {
+			font-family: Exo;
+			font-size: 20pt;
+			line-height: 30pt;
+			color: aliceblue;
+			text-align: left;
+			margin: 5px;
+			padding-bottom: 15px;
+		}
+		.banner {
+			width: 70%;  
+			padding: 0%;
+			margin-left: 15%;
+			margin-right: 50%;
+		}
+		.sticktotop {
+			position: fixed;
+			z-index: 100;
+			width: 100%;
+		}
+		.backgrounddiv {
+			background: url(color.jpg);
+			width: 70%;  
+			padding: 0%;
+			margin-left: 15%;
+			margin-right: 50%;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.finaldiv{
+			padding: 0px 70px 0px 70px;
+		}
+		.button {
+		  background-color: mediumpurple;
+		  border: none;
+		  color: aliceblue;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 25px;
+		  margin: 4px 8px;
+		  cursor: pointer;
+		  border-radius: 20px;
+	}
+	}
+	@media only screen and (max-width: 1079px) { /*in between*/
+
+		h1 { 
+			font-family: Exo;
+			font-weight: 800;
+			font-size: 25pt;
+			line-height: 35pt;
+			color: plum;
+			text-align: center;
+			padding-top: 20px;
+		}
+
+		h2 {
+			font-family: Exo;
+			font-weight: 800;
+			font-size: 25pt;
+			line-height: 35pt;
+			color: plum;
+			display:inline-block;
+			padding-top: 10px;
+		}
+		h3 { 
+			font-family: Exo;
+			font-weight: 800;
+			font-size: 25pt;
+			line-height: 35pt;
+			color: plum;
+			text-align: center;
+			padding-bottom: 5px;
+			margin: 20px;
+		}
+		.finaldiv{
+			padding: 0px;
+		}
+		.p1 {
+			font-family: Exo;
+			font-size: 15pt;
+			line-height: 18pt;
+			color: aliceblue;
+			text-align: center;
+			margin: 5px;
+		} 
+		.p2 {
+			font-family: Exo;
+			font-size: 15pt;
+			line-height: 18pt;
+			color: aliceblue;
+			text-align: left;
+			padding-bottom: 10px;
+			margin: 5px 20px 5px 20px;
+		}
+		.banner{
+			width: 100%;
+			height: 100%;
+			padding: 0%;
+			margin-right: 50%;
+			padding-top: 100px;
+		}
+		.sticktotop{
+			position: fixed;
+			z-index: 100;
+			width: 100%;
+		}
+		.backgrounddiv {
+			background: url(color.jpg);
+			width: 100%;
+			height: 100%;
+			padding: 0%;
+			margin-right: 50%;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.concertimage {
+			width: 80%;
+			margin: 5px;
+		}
+		.button {
+		  background-color: mediumpurple;
+		  border: none;
+		  color: aliceblue;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 18px;
+		  margin: 0px;
+		  cursor: pointer;
+		  border-radius: 20px;
+	}
+	}
+	
+</style>
+
+<body style="overflow-x: hidden;" onLoad="nameGet()">
+	<audio id="myAudio" autoplay="autoplay" loop="loop">
+  		<source src="song.mp3" type="audio/mpeg">
+	</audio>
+	<script>
+	document.getElementById("myAudio").volume = 0.05;
+	function nameGet() {
+		var name = prompt("Please enter your name!");
+		if (name != null && name != "") {
+			document.getElementById("nameP").innerHTML = name +"! Yes you " + name + ", reading this right now. I'm Lorena and you've reached my site. From one music lover to another, welcome! I hope you enjoy your stay here. This site shows off my love for concerts and features some of the ones I've attended (heads up: it's a lot). If you enjoy any of the same music as me, (alternative, pop, punk, indie, etc.), feel free to add me on Spotify, just by scanning the code below! Have a good one! :)";
+  		}
+		else{
+			document.getElementById("nameP").innerHTML = "HEY, YOU READING THIS!! I'm Lorena and you've reached my site. From one music lover to another, welcome! I hope you enjoy your stay here. This site shows off my love for concerts and features some of the ones I've attended (heads up: it's a lot). If you enjoy any of the same music as me, (alternative, pop, punk, indie, etc.), feel free to add me on Spotify, just by scanning the code below! Have a good one! :)";
+		}
+	}
+	function playAudio(){
+		document.getElementById("myAudio").play();
+	}
+	function pauseAudio(){
+		document.getElementById("myAudio").pause();
+	}
+	</script>
+	<div class="navBar sticktotop">
+		<nav class="navbar navbar-expand-sm custom-navbar" >
+			<a href="./index.html">
+				<img src="logo.png" class="img-fluid" style="height:80px; width:80px;"/>
+			</a>
+			<button class="button" onclick="playAudio()" type="button">PLAY</button>
+			<button class="button" onclick="pauseAudio()" type="button">PAUSE</button> 
+			<button class="navbar-toggler custom-toggler" style="position: absolute; right: 0;">
+				<span class="navbar-toggler-icon" data-toggle="collapse" data-target="#navbar">
+				</span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbar">
+				<ul class="navbar-nav ml-auto ">
+					<li class="nav-item"></li>
+					<a href="./index.html" class="nav-link">Home</a>
+					<a href="./page2.html" class="nav-link">Media</a>
+					<a href="./page3.html" class="nav-link">Reviews </a>
+					<a href="./page4.html" class="nav-link">About Me/Contact<a>
+				</ul>			
+			</div>
+		</nav>
+    </div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12">
+				<img class="banner" src="concertthree.png" alt="concert banner">
+			</div>
+		</div>
+		<div class="backgrounddiv">		
+		<div class="row">
+			<div class="col-md-12" style="text-align: center; ">
+					
+				<div class="mx-auto" style="width: 85%"><h1>The Story of an Avid Concert-Goer (pre-covid)</h1></div>
+				
+				<p class="p1" id="nameP">
+				</p>
+				<img class="img-fluid zoom" alt="spotify code" src="myspotify.png" style="padding-bottom: 50px;"/>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 finaldiv">
+				<h3> Top 3 Concerts I've Been To</h3>
+				<div class="row">
+					<div class="col-md-4", style="text-align: center;">
+						<img class="img-fluid concertimage" alt="Conan Gray" src="conangray.png" onmouseover = "this.src='conan.png';" onmouseout = "this.src='conangray.png';"/> 
+						<h2>
+							Conan Gray
+							
+						</h2>  
+						<p class="p2">
+							I got tickets to see Conan Gray for my best friend's birthday. The show took place at Rebel (great bathrooms by the way). He gave an amazing performance filled with familiar songs and lots of dancing. He played never-released songs as well as the classics from the Sunset Season album. In the end, he gave a huge shoutout to Canada and told us a heartwarming story. Overall, it was a night to remember and it definitely made my friend's birthday a lot more special.  
+						</p>
+					</div>
+					<div class="col-md-4", style="text-align: center;">
+						<img class="img-fluid concertimage" alt="Rex Orange County" src="rexorange.png" onmouseover = "this.src='rex.png';" onmouseout = "this.src='rexorange.png';" /> 
+						<h2>
+							Rex Orange County
+						</h2>  
+						<p class="p2">
+							I had wanted to see Rex Orange County so bad, but tickets were sold out. The day before the concert, a friend of mine that had a ticket decided not to go and gave me the ticket instead (which was so so lucky). My friends and I had balcony seats at Danforth Music Hall, but we were standing the whole time. Rex played an incredible show with songs from his Pony album and even old songs from Apricot Princess. Even after it ended, we were still listening to his songs on the subway ride. 
+						</p>
+					</div>
+					<div class="col-md-4", style="text-align: center;">
+						<img class="img-fluid concertimage" alt="Yungblud" src="yung.png" onmouseover = "this.src='yungblud.png';" onmouseout = "this.src='yung.png';"/> 
+						<h2>
+							Yungblud
+						</h2>  
+						<p class="p2">
+							Yungblud was by far my number one favourite concert ever. It was incredibly high energy and I somehow teleported from the middle back all the way to the front AND I ended up getting a picture with him at the end. He played at Danforth Music Hall, where I was in the mosh pit, jumping and singing my heart out. He played songs from his 21st Century Liability album and I had an amazing time from start to finish. If I could see him again in concert, I 100% would.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="mx-auto" style="width: 85%"><h1>Concert Clips</h1></div>
+					<video width="75%" style="display:block; margin: 0 auto; padding-bottom: 20px; padding-top: 20px;" controls>
+  						<source src="clips.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</body>
